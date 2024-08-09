@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petrol World</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Petrol World</h1>
+        <p>Play and earn on the TON blockchain!</p>
+        <div id="ton-connect-button"></div>
+    </header>
+
+    <script>
+        const tonConnect = new TON_CONNECT_UI.TonConnectUI({
+            buttonRootId: 'ton-connect-button',
+            manifestUrl: 'https://gist.githubusercontent.com/bilalalibindal/f2ee64abaac175576c26e93977ef307b/raw/5387ba4c0b6115b1f41ccc710abffa60846a420f/gistfile1.txt'
+        });
+    </script>
+</body>
+</html>
